@@ -41,11 +41,24 @@ http://www.runoob.com/cssref/css-selectors.html
 下面做一下簡單滴整理．．．  
 #### #id { property : value ; }
 這在上面有提到，可以在 HTML 中，為某個元件加上 id，  
+而 CSS 中， id 前面一定要加上 #  。
 >例如  
 HTML中　< span id="test1" > XXX < /span >  
 CSS中　　#test1 { display : block ; }
 
 #### .class { property : value ; }
+HTML 中，為某個元件加上 class，  
+而 CSS 中， class 前面一定要加上 .  。
+>例如  
+HTML中　< span class="test2" > XXX < /span >  
+CSS中　　.test2 { display : block ; }
+
+但是 class 不像 id 只能有一個，可以在 HTML 中為某元件一次設定很多個。
+
+>例如  
+HTML中　< div class="test2 test3" > XXX < /div >  
+CSS中　　.test2 { display : block ; }  
+　　　　 .test3 { text-align : center ; }
 
 #### * { property : value ; }
 
