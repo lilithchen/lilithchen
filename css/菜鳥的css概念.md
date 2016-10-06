@@ -40,6 +40,10 @@ http://www.runoob.com/cssref/css-selectors.html
 除了上面說到的 #id 和 .class 之外，還有很多的樣貌，  
 下面做一下簡單滴整理．．．  
 #### #id { property : value ; }
+這在上面有提到，可以在 HTML 中，為某個元件加上 id，  
+例如  
+HTML中 < span id="test1" > XXX < /span >  
+CSS中  #test1 { display : block ; }
 
 #### .class { property : value ; }
 
@@ -49,4 +53,8 @@ http://www.runoob.com/cssref/css-selectors.html
 
 #### element element { property : value ; }
 
-#### element,element { property : value ; }
+#### element , element { property : value ; }
+
+#### element > element { property : value ; }
+
+#### element + element { property : value ; }
