@@ -35,3 +35,18 @@ HTML 作為整個架構， CSS 為這個架構長出每個地方所需要的份�
 所以那一堆屬性雖然有得查，還是要努力的記得才比較方便啊～
 ###　
 ##選擇器的種類
+W3 CSS 參考手冊裡頭有專門介紹全部的選擇器種類，先附上 link  
+http://www.runoob.com/cssref/css-selectors.html  
+除了上面說到的 #id 和 .class 之外，還有很多的樣貌，  
+下面做一下簡單滴整理．．．  
+#### #id { property : value ; }
+
+#### .class { property : value ; }
+
+#### * { property : value ; }
+
+#### element { property : value ; }
+
+#### element element { property : value ; }
+
+#### element,element { property : value ; }
