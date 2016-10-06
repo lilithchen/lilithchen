@@ -43,7 +43,8 @@ http://www.runoob.com/cssref/css-selectors.html
 而 CSS 中， id 前面一定要加上 “#”  。
 >例如  
 HTML中　< span id="test1" > XXX < /span >  
-CSS中　　#test1 { display : block ; }
+CSS中　　#test1 { display : block ; }  
+這是將 id 為 test1 的 span 設定成顯示方式為區塊元素。
 
 #### .class { property : value ; } --- class 選擇器
 HTML 中，為某個元素加上 class，  
@@ -51,17 +52,19 @@ HTML 中，為某個元素加上 class，
 >例如  
 HTML中　< span class="test2" > XXX < /span >  
 CSS中　　.test2 { display : block ; }  
-這是將名為 test2 的 span 設定成
+這是將 class 為 test2 的 span 設定成顯示方式為區塊元素。
 
 但是 class 不像 id 只能有一個，可以在 HTML 中為某元件一次設定很多個。
 
 >例如  
 HTML中　< div class="test2 test3" > XXX < /div >  
-CSS中　　.test2 { position : absolute ; }  
-　　　　　.test3 { text-align : center ; }
+CSS中　　.test2 { background-color : #FFF ; }  
+　　　　　.test3 { text-align : center ; }  
+此時 class 為 test2 和 test3 的 div 同時會套用白色背景以及文字置中對齊。
 
 #### * { property : value ; } --- 通用選擇器
-“ * ” 是 選擇所有元素，表示當頁所有的元素都將套用此一設定。
+“ * ” 是 選擇所有元素，表示當頁所有的元素都將套用此一設定。  
+但是因為優先權的差異，在後面仍有可能被覆蓋。
 
 #### element { property : value ; } --- 標籤選擇器
 HTML 中的標籤（元素），也可以直接作為 CSS 選擇器  
