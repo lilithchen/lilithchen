@@ -57,8 +57,8 @@ CSS中　　.test2 { display : block ; }
 
 >例如  
 HTML中　< div class="test2 test3" > XXX < /div >  
-CSS中　　.test2 { display : block ; }  
-　　　　 .test3 { text-align : center ; }
+CSS中　　.test2 { position : absolute ; }  
+　　　　　.test3 { text-align : center ; }
 
 #### * { property : value ; }
 
