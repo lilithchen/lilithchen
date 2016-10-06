@@ -14,12 +14,12 @@ HTML 作為整個架構， CSS 為這個架構長出每個地方所需要的份�
 ####選擇器 selector
 基本上就是在 HTML 裡面那些標籤或是自己給他們的命名。  
 
-例如 < h1 > < body > < div > 這樣的東西，在 CSS3 中，可以直接把標籤裡那串字變成選擇器，  
+>例如 < h1 > < body > < div > 這樣的東西，在 CSS3 中，可以直接把標籤裡那串字變成選擇器，  
 　　 像這樣：h1 { color : #FFFFFF ; } 是將 h1 設定顏色為白色  
 　　 也可以在 HTML 幫他們命名（ class 或 id ），然後再將這名稱作為選擇器撰寫 CSS  
 　　 （ 在舊版的 CSS 中，則是必須這樣做 ）  
-　　 像這樣：在HTML中 < div id="test" > XXX < /div >  
-　　 　　　　在CSS中  #test { background-color : #000000 ; }  
+　　 像這樣：在HTML中　< div id="test" > XXX < /div >  
+　　 　　　　在CSS中　　#test { background-color : #000000 ; }  
 　　 　　　　是將 id 名為 test 的 div 設定成背景顏色為黑色。
   
 ####“屬性 property” 與 “值 value” 
@@ -41,9 +41,9 @@ http://www.runoob.com/cssref/css-selectors.html
 下面做一下簡單滴整理．．．  
 #### #id { property : value ; }
 這在上面有提到，可以在 HTML 中，為某個元件加上 id，  
-例如  
-HTML中 < span id="test1" > XXX < /span >  
-CSS中  #test1 { display : block ; }
+>例如  
+HTML中　< span id="test1" > XXX < /span >  
+CSS中　　#test1 { display : block ; }
 
 #### .class { property : value ; }
 
