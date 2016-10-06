@@ -19,7 +19,7 @@ HTML 作為整個架構， CSS 為這個架構長出他每個地方所需要的�
 　　 也可以在 HTML 幫他們命名（ class 或 id ），然後再將這名稱作為選擇器撰寫 CSS  
 　　 （ 在舊版的 CSS 中，則是必須這樣做 ）  
 　　 像這樣：在HTML中 < div id="test" > XXX < /div >  
-　　 　　　　在CSS中  #test { background-color : #000000 ; }
+　　 　　　　在CSS中  #test { background-color : #000000 ; }  
 　　 　　　　是將 id 名為 test 的 div 設定成背景顏色為黑色。
   
 ####“屬性 property” 與 “值 value” 
