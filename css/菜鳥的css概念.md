@@ -14,10 +14,9 @@ HTML 作為整個架構， CSS 為這個架構長出每個地方所需要的份�
 ####選擇器 selector
 基本上就是在 HTML 裡面那些標籤或是自己給他們的命名。  
 
->例如 < h1 > < body > < div > 這樣的東西，在 CSS3 中，可以直接把標籤裡那串字變成選擇器，  
+>例如 < h1 > < body > < div > 這樣的東西，可以直接把標籤裡那串字變成選擇器，  
 　　 像這樣：h1 { color : #FFFFFF ; } 是將 h1 設定顏色為白色  
 　　 也可以在 HTML 幫他們命名（ class 或 id ），然後再將這名稱作為選擇器撰寫 CSS  
-　　 （ 在舊版的 CSS 中，則是必須這樣做 ）  
 　　 像這樣：在HTML中　< div id="test" > XXX < /div >  
 　　 　　　　在CSS中　　#test { background-color : #000000 ; }  
 　　 　　　　是將 id 名為 test 的 div 設定成背景顏色為黑色。
@@ -39,19 +38,20 @@ W3 CSS 參考手冊裡頭有專門介紹全部的選擇器種類，先附上 lin
 http://www.runoob.com/cssref/css-selectors.html  
 除了上面說到的 #id 和 .class 之外，還有很多的樣貌，  
 下面做一下簡單滴整理．．．  
-#### #id { property : value ; }
-這在上面有提到，可以在 HTML 中，為某個元件加上 id，  
-而 CSS 中， id 前面一定要加上 #  。
+#### #id { property : value ; } --- id 選擇器
+這在上面有提到，可以在 HTML 中，為某個元素加上 id，  
+而 CSS 中， id 前面一定要加上 “#”  。
 >例如  
 HTML中　< span id="test1" > XXX < /span >  
 CSS中　　#test1 { display : block ; }
 
-#### .class { property : value ; }
-HTML 中，為某個元件加上 class，  
-而 CSS 中， class 前面一定要加上 .  。
+#### .class { property : value ; } --- class 選擇器
+HTML 中，為某個元素加上 class，  
+而 CSS 中， class 前面一定要加上 “.”  。
 >例如  
 HTML中　< span class="test2" > XXX < /span >  
-CSS中　　.test2 { display : block ; }
+CSS中　　.test2 { display : block ; }  
+這是將名為 test2 的 span 設定成
 
 但是 class 不像 id 只能有一個，可以在 HTML 中為某元件一次設定很多個。
 
@@ -60,9 +60,14 @@ HTML中　< div class="test2 test3" > XXX < /div >
 CSS中　　.test2 { position : absolute ; }  
 　　　　　.test3 { text-align : center ; }
 
-#### * { property : value ; }
+#### * { property : value ; } --- 通用選擇器
+“ * ” 是 選擇所有元素，表示當頁所有的元素都將套用此一設定。
 
-#### element { property : value ; }
+#### element { property : value ; } --- 標籤選擇器
+HTML 中的標籤（元素），也可以直接作為 CSS 選擇器  
+>例如  
+HTML中　< h1 > XXX < /h1 >  
+CSS中　　h1 { font-size : 5em ; }
 
 #### element element { property : value ; }
 
